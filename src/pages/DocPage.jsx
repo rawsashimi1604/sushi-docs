@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Main from '../modules/doc-page/Main'
 import Container from '../components/layout/Container'
+import Main from '../modules/doc-page/Main'
 
 function DocPage() {
   return (

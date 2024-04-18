@@ -1,6 +1,6 @@
 function Header({ text }) {
   return (
-    <h1 className="font-Roboto text-custom-chaKy text-xl md:text-2xl tracking-wider text-left">
+    <h1 className="font-customMono text-custom-chaKy text-3xl md:text-3xl tracking-wider text-left">
       {text}
     </h1>
   );
