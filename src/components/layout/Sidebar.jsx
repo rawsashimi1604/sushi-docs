@@ -28,8 +28,9 @@ function Sidebar() {
   return (
     <aside className="min-w-[300px] py-4 h-full border-r border-white">
       {/* TODO: insert some logo here. */}
-      <div className="pb-8 px-4">some logo</div>
-      <main className="flex flex-col gap-2">
+      <div className="px-4">some sushi gateway logo</div>
+      <div className="pb-8 px-4 text-sm text-custom-lightDark font-customMono">latest: v0.0.0</div>
+      <main className="flex flex-col">
         <SidebarWidget contents={introductionContainer} />
         <SidebarWidget contents={introductionContainer} />
         <SidebarWidget contents={introductionContainer} />
