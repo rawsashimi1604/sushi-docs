@@ -10,13 +10,23 @@ function Main() {
   useEffect(() => {
     const path = location.pathname;
     for (const item of metadataJson) {
-      if (item.path === path) {
+      if ("/docs" + item.path === path) {
         import(`../../docs/${item.markdown}.md`).then((md) => {
           fetch(md.default)
             .then((res) => res.text())
             .then((mdContent) => setContent(mdContent));
         });
         return;
+      }
+      for (const subItem of item.subContents) {
+        if ("/docs" + subItem.path === path) {
+          import(`../../docs/${subItem.markdown}.md`).then((md) => {
+            fetch(md.default)
+              .then((res) => res.text())
+              .then((mdContent) => setContent(mdContent));
+          });
+          return;
+        }
       }
     }
   }, [location]);

@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { FaHome } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
-  useEffect(() => {
-    console.log(location.pathname.split("/"));
-  }, [location]);
+  
+  // useEffect(() => {
+  // }, [location]);
 
   return (
     <nav className="w-full border-b-[0.2px] pb-3 border-custom-lightWhite tracking-wider font-light">

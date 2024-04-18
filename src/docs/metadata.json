@@ -30,5 +30,27 @@
         "tags": ["api gateway", "introduction"]
       }
     ]
+  },
+  {
+    "header": "Getting Started",
+    "path": "/getting-started",
+    "markdown": "GettingStarted",
+    "title": "Getting Started",
+    "author": "Gavin Loo",
+    "date_updated": "18 Apr 2024",
+    "subtitle": "Getting started with Sushi Gateway.",
+    "tags": ["beginner", "introduction", "setup"],
+    "subContents": []
+  },
+  {
+    "header": "Plugins",
+    "path": "/plugins",
+    "markdown": "Plugins",
+    "title": "Plugins",
+    "author": "Gavin Loo",
+    "date_updated": "18 Apr 2024",
+    "subtitle": "An overview of plugins, middleware filters per request.",
+    "tags": ["plugins", "introduction", "middleware"],
+    "subContents": []
   }
 ]
