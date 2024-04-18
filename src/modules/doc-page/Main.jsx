@@ -24,7 +24,7 @@ function Main() {
         }
       }
     }
-  }, []);
+  }, [location]);
 
   return (
     <div className="py-6">
