@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 import "@fontsource/roboto";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/jetbrains-mono";
 import "@fontsource/berkshire-swash";
 import "animate.css";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from './pages/Home';
+import Home from "./pages/Home";
+import DocPage from "./pages/DocPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/introduction" element={<DocPage />} />
           {/* <Route path="/*" element={<NotFound404 />} /> */}
         </Routes>
       </BrowserRouter>
@@ -22,4 +24,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
