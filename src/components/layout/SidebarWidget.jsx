@@ -15,13 +15,13 @@ function SidebarWidget({ contents }) {
         }`}
       >
         {isClicked && <CiSquareMinus className="h-6 w-6" />}
-        <span onClick={() => alert(contents.link)}>{contents.header}</span>
+        <span className="font-bold" onClick={() => alert(contents.link)}>{contents.header}</span>
       </div>
       {isClicked && (
-        <div className="flex flex-col gap-1 bg-custom-chaKy/90 text-custom-dark">
+        <div className="flex flex-col gap-0.5 bg-custom-chaKy/90 text-custom-dark">
           {contents.subContents.map((sub) => {
             return (
-              <div className="pl-12 pb-2 pt-2 cursor-pointer hover:bg-custom-chaKy duration-150 transition-all">
+              <div className="pl-12 pb-1 pt-1 cursor-pointer hover:bg-custom-chaKy duration-150 transition-all">
                 <span onClick={() => alert(sub.link)}>{sub.header}</span>
               </div>
             );
