@@ -2,29 +2,6 @@ import React, { useState, useEffect } from "react";
 import SidebarWidget from "./SidebarWidget";
 import docsMetadata from "../../docs/metadata.json";
 
-const introductionContainer = {
-  header: "Introduction",
-  link: "/introduction",
-  subContents: [
-    {
-      link: "/introduction/what-is-sushi-gateway",
-      header: "What is Sushi Gateway?",
-    },
-    {
-      link: "/introduction/architecture-overview",
-      header: "Architecture Overview",
-    },
-    {
-      link: "/introduction/life-of-a-request",
-      header: "Life of a Request",
-    },
-    {
-      link: "/introduction/what-is-an-api-gateway",
-      header: "What is an API Gateway",
-    },
-  ],
-};
-
 function Sidebar() {
   const [docs, setDocs] = useState([]);
 
