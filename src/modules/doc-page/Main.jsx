@@ -44,19 +44,19 @@ function Main() {
           ),
           h2: ({ node, ...props }) => (
             <h2
-              className="mt-7 mb-7  text-3xl md:text-2xl text-custom-malibu"
+              className="mt-6 mb-6 text-3xl md:text-2xl text-custom-malibu"
               {...props}
             />
           ),
           h3: ({ node, ...props }) => (
             <h3
-              className="mt-6 mb-6  text-2xl md:text-1xl text-custom-coral"
+              className="mt-5 mb-5 text-2xl md:text-xl text-custom-coral"
               {...props}
             />
           ),
           p: ({ node, ...props }) => (
             <p
-              className="mt-5 mb-5 tracking-wider font-customInter"
+              className="mt-4 mb-4 tracking-wider font-customInter"
               {...props}
             />
           ),
@@ -66,19 +66,29 @@ function Main() {
               {...props}
             />
           ),
+          a: ({ node, ...props }) => {
+            return (
+              <a {...props} className="inline-block tracking-wider font-customInter cursor-pointer duration-150 transition-all hover:opacity-90 hover:underline underline-offset-1 hover:translate-x-1 text-custom-malibu" />
+            )
+          },
+          ul: ({ node, ...props }) => {
+            return (
+              <ul className="flex flex-col"{...props}/>
+            )
+          },
           ol: ({ node, ...props }) => {
             return (
-              <div className="inline-flex gap-4">
+              <div className="inline-flex gap-2">
                 <GoDotFill className="min-w-3 w-4 h-3 mt-1.5 text-custom-purple" />
-                <ol {...props} className="tracking-wide font-customInter" />
+                <ol {...props} className="tracking-wider font-customInter cursor-pointer duration-150 transition-all hover:opacity-90 hover:underline underline-offset-1 hover:translate-x-1" />
               </div>
             );
           },
           li: ({ node, ...props }) => {
             return (
-              <div className="inline-flex gap-4 mt-2 mb-2">
+              <div className="inline-flex gap-2">
                 <GoDotFill className="min-w-3 w-4 h-3 mt-1.5 text-custom-purple" />
-                <li {...props} className="tracking-wide font-customInter" />
+                <li {...props} className="tracking-wider font-customInter cursor-pointer duration-150 transition-all hover:opacity-90 hover:underline underline-offset-1 hover:translate-x-1" />
               </div>
             );
           },
