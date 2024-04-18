@@ -18,7 +18,7 @@ function Main() {
         return;
       }
       for (const subDoc of doc.subContents) {
-        if ("/docs" + doc.path === path) {
+        if ("/docs" + subDoc.path === path) {
           setPageMetadata(subDoc);
           return;
         }

@@ -1,1 +1,1 @@
-# What is an API Gateway
+An API Gateway is a reverse proxy.
