@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Markdown from "react-markdown";
 import metadataJson from "../../docs/metadata.json";
+import { GoDotFill } from "react-icons/go";
 
 function Main() {
-  const location = useLocation()
+  const location = useLocation();
   const [content, setContent] = useState("");
 
   useEffect(() => {
