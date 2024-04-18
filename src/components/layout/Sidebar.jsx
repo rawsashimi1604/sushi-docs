@@ -26,7 +26,7 @@ const introductionContainer = {
 
 function Sidebar() {
   return (
-    <aside className="min-w-[300px] py-4 h-full border-r border-white">
+    <aside className="min-w-[300px] py-4 h-full border-r-[0.2px] border-custom-lightWhite">
       {/* TODO: insert some logo here. */}
       <div className="px-4">some sushi gateway logo</div>
       <div className="pb-8 px-4 text-sm text-custom-lightDark font-customMono">latest: v0.0.0</div>

@@ -12,7 +12,7 @@ function Navbar() {
   }, [location])
 
   return (
-    <nav className="w-full border-b pb-3 border-white tracking-wider font-light">
+    <nav className="w-full border-b-[0.2px] pb-3 border-custom-lightWhite tracking-wider font-light">
       {/* TODO: add some breadcrumbs */}
       <div className="flex flex-row items-center gap-2">
         <FaHome className="text-custom-chaKy h-4 w-4" />

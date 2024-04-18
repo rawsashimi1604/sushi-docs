@@ -1,16 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Markdown from "react-markdown";
+import metadataJson from "../../docs/metadata.json";
 
 function Main() {
+  const location = useLocation()
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    import(`../../docs/Introduction.md`).then((md) => {
-      fetch(md.default)
-        .then((res) => res.text())
-        .then((mdContent) => setContent(mdContent));
-    });
-  }, []);
+    const path = location.pathname;
+    for (const item of metadataJson) {
+      if (item.path === path) {
+        import(`../../docs/${item.markdown}.md`).then((md) => {
+          fetch(md.default)
+            .then((res) => res.text())
+            .then((mdContent) => setContent(mdContent));
+        });
+        return;
+      }
+    }
+  }, [location]);
 
   return (
     <div className="font-customMono">
