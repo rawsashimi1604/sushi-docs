@@ -13,7 +13,10 @@ function Navbar() {
       <div className="flex flex-row items-center gap-2">
         <FaHome className="text-custom-chaKy h-4 w-4" />
         {location.pathname === "/" ? (
-          <span>home</span>
+          <div className="flex items-center gap-2">
+            <span className="text-custom-chaKy">/</span>
+            <span className="text-sm tracking-widest">home</span>
+          </div>
         ) : (
           <>
             {location.pathname.split("/").map((item) => {
