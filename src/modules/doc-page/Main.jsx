@@ -3,6 +3,7 @@ import docMetadata from "../../docs/metadata.json";
 import { useLocation } from "react-router-dom";
 import Content from "./Content";
 import Header from "../../components/typography/Header";
+import { GoDotFill } from "react-icons/go";
 
 function Main() {
   const [pageMetadata, setPageMetadata] = useState();
@@ -30,6 +31,11 @@ function Main() {
       {pageMetadata ? (
         <>
           <Header text={pageMetadata.title} />
+          <div className="flex flex-row items-center gap-2 py-3 font-customRoboto tracking-wider font-bold">
+            <span className="text-custom-coral">{pageMetadata.author}</span>
+            <GoDotFill className="text-xs mt-0.5 text-custom-chaKy"/>
+            <span className="text-custom-coral">{pageMetadata.date_updated}</span>
+            </div>
           <div className="mt-4 flex flex-wrap justify-start items-center gap-3 mb-10">
             {pageMetadata.tags.map((tag) => {
               return (
