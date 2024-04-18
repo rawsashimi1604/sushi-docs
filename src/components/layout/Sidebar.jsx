@@ -25,7 +25,7 @@ function Sidebar() {
       {/* TODO: insert some logo here. */}
       <div className="px-4">some sushi gateway logo</div>
       <div className="pb-8 px-4 text-sm text-custom-lightDark font-customMono">
-        latest: v0.0.0
+        version: v0.0.0
       </div>
       <main className="flex flex-col">
         {docs.map((mappedDoc) => {
