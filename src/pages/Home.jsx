@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import Main from '../modules/home/Main'
+import Container from "../components/layout/Container";
+import Main from "../modules/home/Main";
 
 function Home() {
   return (
-    <Main />
-  )
+    <Container>
+      <Main />
+    </Container>
+  );
 }
 
-export default Home
+export default Home;

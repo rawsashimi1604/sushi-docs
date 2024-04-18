@@ -1,19 +1,18 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
-
+import Sidebar from "./Sidebar";
 
 function Container({ children }) {
   return (
-    <main className="bg-custom-bg text-custom-lightWhite min-w-screen min-h-screen px-10 flex justify-center pb-10 pt-2 font-customInter">
+    <div className="font-customInter bg-custom-bg text-custom-lightWhite min-w-screen min-h-screen ">
       <Navbar />
-      <div className="animate__animated animate__fadeIn w-screen md:w-[1000px] h-full mt-16">
-        {children}
-        <div className="pt-6">
-          <Footer />
+      <main className="flex pb-10 pt-2">
+        <Sidebar />
+        <div className="animate__animated animate__fadeIn w-screen md:w-[1000px] h-full">
+            {children}
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
 
