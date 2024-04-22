@@ -1,3 +1,5 @@
+# Introduction
+
 The purpose of this documentation is to provide a comprehensive guide to the Sushi Gateway. It includes detailed information on the gateway's architecture, setup, and configuration.
 
 ## Pages
