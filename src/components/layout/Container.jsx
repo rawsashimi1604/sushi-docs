@@ -7,7 +7,7 @@ function Container({ children }) {
     <div className="font-customInter bg-custom-bg text-custom-lightWhite min-w-screen min-h-screen ">
       <main className="flex h-screen">
         <Sidebar />
-        <div className="w-screen p-4 px-8 h-full">
+        <div className="ml-[300px] w-screen p-4 px-8 h-full">
           <Navbar />
           <div className="animate__animated animate__fadeIn md:w-[1000px]">{children}</div>
         </div>

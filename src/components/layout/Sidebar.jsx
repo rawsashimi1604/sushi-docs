@@ -23,7 +23,7 @@ function Sidebar() {
   }, []);
 
   return (
-    <aside className="min-w-[300px] py-4 h-full border-r-[0.2px] border-custom-lightWhite">
+    <aside className="fixed w-[300px] min-w-[300px] py-4 h-full border-r-[0.2px] border-custom-lightWhite">
       {/* TODO: insert some logo here. */}
       <div className="px-4 cursor-pointer" onClick={() => navigate("/")}>
         some sushi gateway logo
