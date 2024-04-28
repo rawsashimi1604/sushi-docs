@@ -22,7 +22,7 @@ By serving as a singular point of entry, API Gateways also facilitate a range of
 
 During high-traffic scenarios, where an application system encounters an overwhelming volume of requests, the typical response is to scale the services horizontally by adding more instances to distribute the load, thus employing an application cluster to increase the system’s processing capability. This process, known as load balancing, utilizes algorithms to evenly distribute the workload across multiple services, effectively sharing the system's burden.  
 
-By leveraging an API gateway, the implementation of load balancing becomes a streamlined process. The gateway employs service discovery mechanisms to maintain awareness of the network addresses and statuses of all services within the system (see Fig 4). Then, through load balancing algorithms, the API gateway efficiently distributes incoming traffic, ensuring that no single service bears too much load, thereby maintaining system performance and reliability.
+By leveraging an API gateway, the implementation of load balancing becomes a streamlined process. The gateway employs service discovery mechanisms to maintain awareness of the network addresses and statuses of all services within the system. Then, through load balancing algorithms, the API gateway efficiently distributes incoming traffic, ensuring that no single service bears too much load, thereby maintaining system performance and reliability.
 
 ## Analytics and Monitoring
 
