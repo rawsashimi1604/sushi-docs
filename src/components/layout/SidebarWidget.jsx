@@ -22,8 +22,8 @@ function SidebarWidget({ contents }) {
         <div className="flex flex-col gap-0.5 bg-custom-chaKy/85 text-black">
           {contents.subContents.map((sub) => {
             return (
-              <div className="pl-12 pb-1 pt-1 cursor-pointer hover:bg-custom-chaKy duration-150 transition-all">
-                <span onClick={() => navigate("/docs" + sub.link)}>{sub.header}</span>
+              <div className="pl-12 pb-1 pt-1 hover:bg-custom-chaKy duration-150 transition-all">
+                <span className="cursor-pointer" onClick={() => navigate("/docs" + sub.link)}>{sub.header}</span>
               </div>
             );
           })}
