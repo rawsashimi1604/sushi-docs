@@ -6,6 +6,7 @@ import docsMetadata from "../../docs/metadata.json";
 import { GoDotFill } from "react-icons/go";
 import { FaDocker } from "react-icons/fa";
 import Subheader from "../../components/typography/Subheader";
+import { SiKubernetes } from "react-icons/si";
 
 function Main() {
   const navigate = useNavigate();
@@ -30,13 +31,20 @@ function Main() {
 
       <div className="mt-5">
         <Subheader text="How to get started" />
-        <div className="inline-flex items-center gap-3 p-4 mt-4 border-[0.2px] rounded-2xl shadow-lg transition-all hover:translate-y-1 duration-150 hover:cursor-pointer">
-          <FaDocker className="text-2xl" />
-          <p>Start locally with Docker</p>
+        <div className="flex gap-4 items-center">
+          <div className="inline-flex items-center gap-3 p-4 mt-4 border-[0.2px] rounded-2xl shadow-lg transition-all hover:translate-y-1 duration-150 hover:cursor-pointer">
+            <FaDocker className="text-2xl" />
+            <p>Start locally with Docker</p>
+          </div>
+          <div className="inline-flex items-center gap-3 p-4 mt-4 border-[0.2px] rounded-2xl shadow-lg transition-all hover:translate-y-1 duration-150 hover:cursor-pointer">
+            <SiKubernetes className="text-2xl" />
+            <p>Installing on Kubernetes Cluster</p>
+          </div>
         </div>
       </div>
 
-      <ul className="flex flex-col mt-4">
+      <ul className="flex flex-col mt-8">
+        <p className="text-custom-coral font-bold">Pages:</p>
         {docs.map((doc, index) => {
           return (
             <div className="flex flex-col">
