@@ -13,6 +13,7 @@ function Main() {
 
   useEffect(() => {
     setDocs(docsMetadata);
+    document.title = "Sushi Gateway | Home"
   }, []);
 
   return (
