@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/typography/Header";
 import docsMetadata from "../../docs/metadata.json";
 import { GoDotFill } from "react-icons/go";
+import { FaDocker } from "react-icons/fa";
+import Subheader from "../../components/typography/Subheader";
 
 function Main() {
   const navigate = useNavigate();
@@ -15,12 +17,23 @@ function Main() {
 
   return (
     <div className="py-6 font-customInter tracking-wide">
-      <Header text="Sushi Gateway documentation" />
 
-      <p className="">
-        Welcome to the Sushi Gateway documentation page! You can find all
-        information related to the project here.
-      </p>
+      <div className="">
+        <Header text="Sushi Gateway" />
+        <p className="mt-2">
+          Welcome to the Sushi Gateway documentation page! You can find all
+          information related to the project here.
+        </p>
+      </div>
+
+
+      <div className="mt-5">
+        <Subheader text="How to get started" />
+        <div className="inline-flex items-center gap-3 p-4 mt-4 border-[0.2px] rounded-2xl shadow-lg transition-all hover:translate-y-1 duration-150 hover:cursor-pointer">
+          <FaDocker className="text-2xl" />
+          <p>Start locally with Docker</p>
+        </div>
+      </div>
 
       <ul className="flex flex-col mt-4">
         {docs.map((doc, index) => {
