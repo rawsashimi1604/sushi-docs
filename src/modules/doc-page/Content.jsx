@@ -9,6 +9,7 @@ function Content() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
+    setContent("")
     const path = location.pathname;
     for (const item of metadataJson) {
       if ("/docs" + item.path === path) {
@@ -21,10 +22,18 @@ function Content() {
       }
       for (const subItem of item.subContents) {
         if ("/docs" + subItem.path === path) {
+
           import(`../../docs/${subItem.markdown}.md`).then((md) => {
             fetch(md.default)
               .then((res) => res.text())
-              .then((mdContent) => setContent(mdContent));
+              .then((mdContent) => setContent(mdContent))
+          }).catch(err => {
+            console.log("inside catch")
+            import("../../docs/404.md").then(md404 => {
+              fetch(md404.default)
+                .then(res => res.text())
+                .then(mdContent => setContent(mdContent))
+            })
           });
           return;
         }
@@ -73,7 +82,7 @@ function Content() {
           },
           ul: ({ node, ...props }) => {
             return (
-              <ul className="flex flex-col"{...props}/>
+              <ul className="flex flex-col"{...props} />
             )
           },
           ol: ({ node, ...props }) => {

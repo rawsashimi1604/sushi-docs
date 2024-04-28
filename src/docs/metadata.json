@@ -55,7 +55,52 @@
       "introduction",
       "setup"
     ],
-    "subContents": []
+    "subContents": [
+      {
+        "header": "Understanding and configuring Services and Routes",
+        "path": "/understanding-and-configuring-services-and-routes",
+        "markdown": "UnderstandingConfiguringServiceRoutes",
+        "title": "Understanding and configuring Services and Routes",
+        "author": "Gavin Loo",
+        "date_updated": "28 Apr 2024",
+        "subtitle": "A brief overview of Services and Routes in Sushi gateway and how to configure them.",
+        "tags": [
+          "services",
+          "routes",
+          "configuring",
+          "routing"
+        ]
+      },
+      {
+        "header": "Configuring Rate Limiting to protect upstream Services",
+        "path": "/configuring-rate-limiting",
+        "markdown": "ConfiguringRateLimiting",
+        "title": "Configuring Rate Limiting to protect upstream Services",
+        "author": "Gavin Loo",
+        "date_updated": "28 Apr 2024",
+        "subtitle": "An introduction to plugins and how to configure rate limiting for your API Gateway",
+        "tags": [
+          "configuring",
+          "plugins",
+          "rate limiting",
+          "security"
+        ]
+      },
+      {
+        "header": "Load balancing for horizontal Service scaling",
+        "path": "/configuring-load-balancing",
+        "markdown": "ConfiguringLoadBalancing",
+        "title": "Load balancing for horizontal Service scaling",
+        "author": "Gavin Loo",
+        "date_updated": "28 Apr 2024",
+        "subtitle": "Configuring load balancing on your services to scale it horizontally",
+        "tags": [
+          "configuring",
+          "load balancing",
+          "scaling"
+        ]
+      }
+    ]
   },
   {
     "header": "Plugins",
