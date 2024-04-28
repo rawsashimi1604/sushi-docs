@@ -7,4 +7,4 @@ The purpose of this documentation is to provide a comprehensive guide to the Sus
 - [What is Sushi Gateway](introduction/what-is-sushi-gateway)
 - [What is an API Gateway](introduction/what-is-api-gateway)
 
-[next](introduction/what-is-sushi-gateway)
+[next](what-is-sushi-gateway)

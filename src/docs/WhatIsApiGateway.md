@@ -31,3 +31,6 @@ By leveraging an API gateway, the implementation of load balancing becomes a str
 The API gateway can also act as a node for analytics and monitoring within an enterprise software ecosystem, logging request and response data as API traffic flows through. This gateway channels HTTP logs to a dedicated log server, creating a record of interactions that can be invaluable for troubleshooting and understanding user behaviour. Concurrently, it relays metrics to monitoring systems like Prometheus, which are then visualized through tools such as Grafana.  
 
 This setup allows for real-time observation and historical analysis of API performance, providing insights that can inform optimizations, enhance user experience, and preemptively identify potential issues before they escalate. Through this analytics and monitoring framework, the API gateway allows organizations to maintain a vigilant watch over their digital infrastructures, ensuring operational excellence and sustained service quality.
+
+[***prev***](what-is-sushi-gateway)
+[next](getting-started)

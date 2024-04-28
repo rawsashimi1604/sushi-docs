@@ -7,27 +7,38 @@
     "author": "Gavin Loo",
     "date_updated": "18 Apr 2024",
     "subtitle": "A basic introduction to Sushi Gateway - a lightweight L7 API Gateway.",
-    "tags": ["api gateway", "introduction", "sushi gateway"],
+    "tags": [
+      "api gateway",
+      "introduction",
+      "sushi gateway"
+    ],
     "subContents": [
       {
         "header": "What is Sushi Gateway",
-        "path": "/introduction/what-is-sushi-gateway",
+        "path": "/what-is-sushi-gateway",
         "markdown": "WhatIsSushiGateway",
         "title": "What is Sushi Gateway?",
         "author": "Gavin Loo",
         "date_updated": "18 Apr 2024",
         "subtitle": "What is Sushi gateway???",
-        "tags": ["api gateway", "introduction", "sushi gateway"]
+        "tags": [
+          "api gateway",
+          "introduction",
+          "sushi gateway"
+        ]
       },
       {
-        "header": "What an API Gateway",
-        "path": "/introduction/what-is-api-gateway",
+        "header": "What is an API Gateway",
+        "path": "/what-is-api-gateway",
         "markdown": "WhatIsApiGateway",
         "title": "What is an API Gateway?",
         "author": "Gavin Loo",
         "date_updated": "18 Apr 2024",
         "subtitle": "An introduction to the API Gateway pattern",
-        "tags": ["api gateway", "introduction"]
+        "tags": [
+          "api gateway",
+          "introduction"
+        ]
       }
     ]
   },
@@ -39,7 +50,11 @@
     "author": "Gavin Loo",
     "date_updated": "18 Apr 2024",
     "subtitle": "Getting started with Sushi Gateway.",
-    "tags": ["beginner", "introduction", "setup"],
+    "tags": [
+      "beginner",
+      "introduction",
+      "setup"
+    ],
     "subContents": []
   },
   {
@@ -50,7 +65,11 @@
     "author": "Gavin Loo",
     "date_updated": "18 Apr 2024",
     "subtitle": "An overview of plugins, middleware filters per request.",
-    "tags": ["plugins", "introduction", "middleware"],
+    "tags": [
+      "plugins",
+      "introduction",
+      "middleware"
+    ],
     "subContents": []
   }
 ]
