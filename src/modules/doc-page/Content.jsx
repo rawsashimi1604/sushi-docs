@@ -17,6 +17,13 @@ function Content() {
           fetch(md.default)
             .then((res) => res.text())
             .then((mdContent) => setContent(mdContent));
+        }).catch(err => {
+          console.log("inside catch")
+          import("../../docs/404.md").then(md404 => {
+            fetch(md404.default)
+              .then(res => res.text())
+              .then(mdContent => setContent(mdContent))
+          })
         });
         return;
       }
