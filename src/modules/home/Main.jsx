@@ -21,8 +21,8 @@ function Main() {
     <div className="py-6 font-customInter tracking-wide">
 
       <div className="">
-        <Header text="Sushi Gateway" />
-        <p className="mt-2">
+        <img src="/logo.png" className="w-80" style={{ filter: "invert(1)" }} />
+        <p className="mt-1">
           Welcome to the Sushi Gateway documentation page! You can find all
           information related to the project here.
         </p>
