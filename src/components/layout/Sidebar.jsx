@@ -36,7 +36,7 @@ function Sidebar() {
             version: v0.0.0
           </div>
         </section>
-        <main className="flex flex-col bg-custom-dark/70 flex-1">
+        <main className="flex flex-col bg-custom-dark/70 flex-1 overflow-y-scroll">
           {docs.map((mappedDoc) => {
             return <SidebarWidget contents={mappedDoc} />;
           })}
