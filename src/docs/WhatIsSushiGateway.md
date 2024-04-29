@@ -22,5 +22,5 @@ Sushi Gateway offers several advantages for organizations looking to enhance the
 - **Security**: With built-in support for AI-driven security log analysis, the gateway can preemptively detect and mitigate potential threats.
 - **Performance**: Designed to handle requests in a non-blocking manner, Sushi Gateway ensures optimal performance even under high loads.
 
-[***prev***](introduction)
+[**_prev_**](introduction)
 [next](what-is-api-gateway)

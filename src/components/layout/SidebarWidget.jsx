@@ -5,7 +5,7 @@ import { CiSquareMinus } from "react-icons/ci";
 
 function SidebarWidget({ contents }) {
   const navigate = useNavigate();
-  const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(true);
 
   return (
     <div className="tracking-wider text-sm">

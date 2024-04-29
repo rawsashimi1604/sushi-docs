@@ -7,11 +7,7 @@
     "author": "Gavin Loo",
     "date_updated": "18 Apr 2024",
     "subtitle": "A basic introduction to Sushi Gateway - a lightweight L7 API Gateway.",
-    "tags": [
-      "api gateway",
-      "introduction",
-      "sushi gateway"
-    ],
+    "tags": ["api gateway", "introduction", "sushi gateway"],
     "subContents": [
       {
         "header": "What is Sushi Gateway",
@@ -21,11 +17,7 @@
         "author": "Gavin Loo",
         "date_updated": "18 Apr 2024",
         "subtitle": "What is Sushi gateway???",
-        "tags": [
-          "api gateway",
-          "introduction",
-          "sushi gateway"
-        ]
+        "tags": ["api gateway", "introduction", "sushi gateway"]
       },
       {
         "header": "What is an API Gateway",
@@ -35,10 +27,7 @@
         "author": "Gavin Loo",
         "date_updated": "28 Apr 2024",
         "subtitle": "An introduction to the API Gateway pattern",
-        "tags": [
-          "api gateway",
-          "introduction"
-        ]
+        "tags": ["api gateway", "introduction"]
       }
     ]
   },
@@ -50,11 +39,7 @@
     "author": "Gavin Loo",
     "date_updated": "18 Apr 2024",
     "subtitle": "Getting started with Sushi Gateway.",
-    "tags": [
-      "beginner",
-      "introduction",
-      "setup"
-    ],
+    "tags": ["beginner", "introduction", "setup"],
     "subContents": [
       {
         "header": "Understanding and configuring Services and Routes",
@@ -64,12 +49,7 @@
         "author": "Gavin Loo",
         "date_updated": "28 Apr 2024",
         "subtitle": "A brief overview of Services and Routes in Sushi gateway and how to configure them.",
-        "tags": [
-          "services",
-          "routes",
-          "configuring",
-          "routing"
-        ]
+        "tags": ["services", "routes", "configuring", "routing"]
       },
       {
         "header": "Configuring Rate Limiting to protect upstream Services",
@@ -79,12 +59,7 @@
         "author": "Gavin Loo",
         "date_updated": "28 Apr 2024",
         "subtitle": "An introduction to plugins and how to configure rate limiting for your API Gateway",
-        "tags": [
-          "configuring",
-          "plugins",
-          "rate limiting",
-          "security"
-        ]
+        "tags": ["configuring", "plugins", "rate limiting", "security"]
       },
       {
         "header": "Load balancing for horizontal Service scaling",
@@ -94,11 +69,7 @@
         "author": "Gavin Loo",
         "date_updated": "28 Apr 2024",
         "subtitle": "Configuring load balancing on your services to scale it horizontally",
-        "tags": [
-          "configuring",
-          "load balancing",
-          "scaling"
-        ]
+        "tags": ["configuring", "load balancing", "scaling"]
       }
     ]
   },
@@ -110,11 +81,38 @@
     "author": "Gavin Loo",
     "date_updated": "18 Apr 2024",
     "subtitle": "An overview of plugins, middleware filters per request.",
-    "tags": [
-      "plugins",
-      "introduction",
-      "middleware"
-    ],
-    "subContents": []
+    "tags": ["plugins", "introduction", "middleware"],
+    "subContents": [
+      {
+        "header": "Basic Auth Plugin",
+        "path": "/basic-auth-plugin",
+        "markdown": "PluginBasicAuth",
+        "title": "Basic Auth Plugin",
+        "author": "Gavin Loo",
+        "date_updated": "28 Apr 2024",
+        "subtitle": "Configuring basic auth plugin",
+        "tags": ["configuring", "plugin", "basic auth"]
+      },
+      {
+        "header": "JWT Plugin",
+        "path": "/jwt-plugin",
+        "markdown": "PluginJwt",
+        "title": "JWT Plugin",
+        "author": "Gavin Loo",
+        "date_updated": "28 Apr 2024",
+        "subtitle": "Configuring JWT (JSON Web Token) plugin",
+        "tags": ["configuring", "plugin", "jwt"]
+      },
+      {
+        "header": "Key Auth Plugin",
+        "path": "/key-auth-plugin",
+        "markdown": "PluginKeyAuth",
+        "title": "Key Auth Plugin",
+        "author": "Gavin Loo",
+        "date_updated": "28 Apr 2024",
+        "subtitle": "Configuring key authentication plugin",
+        "tags": ["configuring", "plugin", "key auth"]
+      }
+    ]
   }
 ]
