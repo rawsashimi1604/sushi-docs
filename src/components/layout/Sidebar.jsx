@@ -11,7 +11,7 @@ function Sidebar() {
 
   useEffect(() => {
     const mapped = [];
-    for (const item of docsMetadata) {
+    docsMetadata.forEach((item) => {
       mapped.push({
         header: item.header,
         link: item.path,
@@ -20,14 +20,13 @@ function Sidebar() {
           header: subItem.header,
         })),
       });
-    }
+    });
     setDocs(mapped);
   }, []);
 
   return (
     <aside className="fixed w-[300px] min-w-[300px] pb-0 h-full border-r-[0.2px] border-custom-lightWhite/40 flex flex-col justify-between">
       <div className="flex-grow flex flex-col">
-        {/* TODO: insert some logo here. */}
         <section className="pt-4 bg-custom-green shadow-xl text-black">
           <div className="px-4 cursor-pointer" onClick={() => navigate("/")}>
             <Logo />
@@ -44,17 +43,24 @@ function Sidebar() {
       </div>
 
       <div className="px-4 flex flex-col gap-2 pb-4 bg-custom-dark/70 text-white">
-        <Link target="_blank" to="https://github.com/rawsashimi1604/sushi-gateway">
+        <Link
+          target="_blank"
+          to="https://github.com/rawsashimi1604/sushi-gateway"
+        >
           <div className="flex items-center gap-2 duration-150 transition-all hover:underline hover:cursor-pointer">
             <GrGithub />
-            <span className="text-sm tracking-widest">Source code (gateway)</span>
+            <span className="text-sm tracking-widest">
+              Source code (gateway)
+            </span>
           </div>
         </Link>
 
         <Link target="_blank" to="https://github.com/rawsashimi1604/sushi-docs">
           <div className="flex items-center gap-2 duration-150 transition-all hover:underline hover:cursor-pointer">
             <GrGithub />
-            <span className="text-sm tracking-widest">Source code (documentation)</span>
+            <span className="text-sm tracking-widest">
+              Source code (documentation)
+            </span>
           </div>
         </Link>
       </div>
